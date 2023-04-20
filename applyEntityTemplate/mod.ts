@@ -10,7 +10,7 @@ const template1 = "${{template1Id}}";
 
 export async function applyEntityTemplates(payload: any) {
     // as an example, checking for only new location entities
-    if (payload.meta.eventType === "ENTITY_CREATED" && payload.primaryProfile.meta.entityType === "location") {
+    if (payload.meta.eventType === "ENTITY_CREATED" && payload.primaryProfile.meta.entityType === "S{{entityType}}") {
         await applyTemplate(template1, payload.entityId);
         // logic flow for applying different sets of templates based on the value of a specific field
         // if (payload.primaryProfile.c_customField === "value1") {
