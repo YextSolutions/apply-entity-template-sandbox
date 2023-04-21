@@ -1,7 +1,7 @@
 import { applyTemplate } from "./utils.ts";
 
 // define any template ID(s) to be passed to the generic Apply Template function later on
-const ENTITY_TYPE = "${{entityType}}"
+const ENTITY_TYPE = "${{entityTypeId}}"
 // define any template ID(s) to be passed to the generic Apply Template function later on
 const template1 = "${{templateId}}";
 // const template2 = "";
